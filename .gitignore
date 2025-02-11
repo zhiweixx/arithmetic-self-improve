@@ -1,1 +1,10 @@
-
+/out
+/wandb
+**/__pycache__/**
+/data
+/plotting/out*
+/self_improve_data
+/openai_ft_data
+/self_improve_data*
+*.pyc
+plotting
