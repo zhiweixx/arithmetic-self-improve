@@ -2,6 +2,11 @@
 
 This repository contains the code for the paper "Self-Improving Transformers Overcome Easy-to-Hard and Length Generalization Challenges".
 
+<div align="center">
+  <img src="figure/result_overview_v2.png" alt="Figure caption" width="100%">
+  <p><em>Overview of self-improvement results. Models trained with self-improvement can tackle increasingly complex tasks that extend far beyond their initial training distributions, achieving significant generalization without any additional supervision.</em></p>
+</div>
+
 ## Dependencies
 
 <!-- Before running the experiments, ensure you have zsh installed:
@@ -56,6 +61,7 @@ zsh experiments/run_maze_nodes_vanilla.sh
 ### Ablation: Accelerated Self-Improvement (Section 7.2)
 ```bash
 zsh experiments/run_copy_fast_new.sh
+zsh experiments/run_mult_fast.sh
 ```
 
 ### Ablation: Pretrained Models (Section 7.3)
