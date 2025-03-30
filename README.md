@@ -18,9 +18,9 @@ Assuming you have CUDA 12 and python 3.11.
 
 To install the required dependencies, run:
 ```bash
-pip install torch==2.4.0 numpy==1.26.4
+pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 numpy==1.26.4
 pip install transformers==4.48.0 accelerate==1.2.1 datasets==3.2.0 trl==0.10.1 peft==0.12.0 Levenshtein==0.25.1 sentencepiece==0.2.0 wandb==0.17.0
-pip install wheel
+# pip install wheel
 pip install flash-attn==2.7.4.post1 --no-build-isolation
 ```
 When installing flash attention, you may run into the following issues
