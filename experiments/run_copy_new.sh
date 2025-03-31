@@ -4,7 +4,7 @@ set -e
 
 for self_improve_round in {0..100}; do
     # CUDA_VISIBLE_DEVICES=0,1  WANDB_MODE=online torchrun --nnodes=1 --nproc_per_node=2 --max_restarts=0 run_self_improve.py \
-    CUDA_VISIBLE_DEVICES=1 WANDB_MODE=online python run_self_improve.py \
+    CUDA_VISIBLE_DEVICES=0 WANDB_MODE=online python run_self_improve.py \
         --seed=42 \
         --architecture=llama \
         --from_pretrained=False \
