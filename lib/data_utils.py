@@ -539,8 +539,7 @@ def get_self_improve_dataset(args: ScriptArguments, train_args: Seq2SeqTrainingA
                 'n_digits_b_range': (n_digits_b_start, n_digits_b_end),
                 'shard': get_shards(args.num_self_improve_data * frac, args.num_workers),
                 'seed': train_args.seed,
-                'lock_operand_length': True,
-                'noisy_difficulty': args.noisy_difficulty
+                'lock_operand_length': True
             },
             num_proc=args.num_workers if args.num_workers > 0 else None,
             keep_in_memory=True
